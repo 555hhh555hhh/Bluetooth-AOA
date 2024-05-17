@@ -1,9 +1,5 @@
 # ublox XPLR-AOA-2 explorer kits定位套件使用指南
 
-作者：汤竑敬
-
-联系方式：12011827@mail.sustech.edu.cn / 微信:13769875999
-
 资料附件：https://github.com/555hhh555hhh/Bluetooth-AOA
 
 产品官网：https://www.u-blox.com/en/product/xplr-aoa-2-kit
@@ -20,9 +16,9 @@
 
 2. 打开上位机s-center，选择串口号连接，检查波特率、奇偶校验、数据位、停止位等参数
 
-   ![image-20240517223735546](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20240517223735546.png)
+   ![image-20240517223735546](Image\image-20240517223735546.png)
 
-   <img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20240517223213278.png" alt="image-20240517223213278" style="zoom:75%;" />
+   <img src="Image\image-20240517223213278.png" alt="image-20240517223213278" style="zoom:75%;" />
 
    上电之后POWER指示灯常亮，上位机连接成功连接后CTS指示灯常亮
 
@@ -40,11 +36,11 @@
 
    可能会等待一段时间才出现如下所示黑框，或者出现黑框后要等待一段时间才开始有进度条变动
 
-<img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20240517224331320.png" alt="image-20240517224331320" style="zoom:50%;" />
+<img src="Image\image-20240517224331320.png" alt="image-20240517224331320" style="zoom:50%;" />
 
 5. 烧录完成
 
-<img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20240517231107248.png" alt="image-20240517231107248" style="zoom:80%;" />
+<img src="Image\image-20240517231107248.png" alt="image-20240517231107248" style="zoom:80%;" />
 
 ​	这时电路板DS1常亮绿灯，CTS和RTS指示灯常亮，代表工作正常。上位机也从串口读到数据，代表工作正常。
 
@@ -76,29 +72,29 @@
 
    之前下载了nrfutil软件，双击运行应该什么也不会发生，这个软件类似于安装python，需要在控制命令行cmd来使用它。
 
-<img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20240517235223443.png" alt="image-20240517235223443" style="zoom:80%;" />
+<img src="Image\image-20240517235223443.png" alt="image-20240517235223443" style="zoom:80%;" />
 
 ​	但现在还不能直接运行，因为我们只是把这个软件下载下来，系统还不知道我们下载了这个软件，所以要把它添加到系统路径
 
 在Windows搜索框搜索“高级系统设置”并打开
 
-<img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20240517235715384.png" alt="image-20240517235715384" style="zoom:50%;" />
+<img src="Image\image-20240517235715384.png" alt="image-20240517235715384" style="zoom:50%;" />
 
 点击环境变量->系统变量->Path->编辑
 
-<img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20240518000103118.png" alt="image-20240518000103118" style="zoom:67%;" />
+<img src="Image\image-20240518000103118.png" alt="image-20240518000103118" style="zoom:67%;" />
 
 新建->浏览->选择包含nrfutil程序的文件夹点确定
 
-<img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20240518000522961.png" alt="image-20240518000522961" style="zoom:67%;" />
+<img src="Image\image-20240518000522961.png" alt="image-20240518000522961" style="zoom:67%;" />
 
 现在能使用nrfutil了，但是为了输入命令简单，我们可以在包含烧录文件的文件夹里打开控制命令行，就不用输入文件位置了。
 
 首先找到适合烧录的文件
 
-<img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20240518001338051.png" alt="image-20240518001338051" style="zoom:80%;" />
+<img src="Image\image-20240518001338051.png" alt="image-20240518001338051" style="zoom:80%;" />
 
-<img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20240518001545271.png" alt="image-20240518001545271" style="zoom:80%;" />
+<img src="Image\image-20240518001545271.png" alt="image-20240518001545271" style="zoom:80%;" />
 
 这时候控制命令行就能够直接使用了，输入命令并运行，**注意修改串口号**
 
@@ -110,7 +106,7 @@
 >
 > 运行命令后请耐心等待至少1分钟，反正报错会自己停止，不要手动去终止。一般来说要等待一段时间后进度条才会开始变化。
 
-![image-20240518001715027](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20240518001715027.png)
+![image-20240518001715027](Image\image-20240518001715027.png)
 
 5. 检查是否烧录成功
 
@@ -124,7 +120,7 @@
 
    ​	可以进行简单的通信测试，请注意，C209的串口只在开机后10s内可用，如无应答可以按RESET按钮再尝试。
 
-   ​	<img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20240518003102466.png" alt="image-20240518003102466" style="zoom:67%;" />
+   ​	<img src="Image\image-20240518003102466.png" alt="image-20240518003102466" style="zoom:67%;" />
 
 ## 数据读取
 
@@ -134,7 +130,7 @@
 
 将C211天线板连接到电脑，打开s-center
 
-<img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20240518003852404.png" alt="image-20240518003852404" style="zoom:67%;" />
+<img src="Image\image-20240518003852404.png" alt="image-20240518003852404" style="zoom:67%;" />
 
 报文个字段含义如下：
 
@@ -157,19 +153,19 @@
 
 使用Python进行数据读取，在设置串口时需要增加一些设置，特别是开启RTSCTS
 
-![image-20240518005605295](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20240518005605295.png)
+![image-20240518005605295](Image\image-20240518005605295.png)
 
 在死循环中读取串口数据
 
-![image-20240518005655206](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20240518005655206.png)
+![image-20240518005655206](Image\image-20240518005655206.png)
 
-![image-20240518005740131](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20240518005740131.png)
+![image-20240518005740131](Image\image-20240518005740131.png)
 
 进行数据筛选，只保留两个角度的信息
 
-![image-20240518005831578](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20240518005831578.png)
+![image-20240518005831578](Image\image-20240518005831578.png)
 
-![image-20240518005857061](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20240518005857061.png)
+![image-20240518005857061](Image\image-20240518005857061.png)
 
 ```python
 import serial
@@ -217,15 +213,15 @@ finally:
 
 
 
-<img src="C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20240518010741124.png" alt="image-20240518010741124" style="zoom:50%;" />
+<img src="Image\image-20240518010741124.png" alt="image-20240518010741124" style="zoom:50%;" />
 
 假设在二维空间中，有两个基站分别位于A\(x1, y1\)、B\(x2, y2\)，而待定位的移动基站N(x, y)。如果基站A和B测量到的信号到达角度分别为θ1、θ2
 
-由直线斜率关系可得如下方程：![image-20240518011150793](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20240518011150793.png)
+由直线斜率关系可得如下方程：![image-20240518011150793](Image\image-20240518011150793.png)
 
-将上式变形，构造线性方程组得：![image-20240518011205581](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20240518011205581.png)
+将上式变形，构造线性方程组得：![image-20240518011205581](Image\image-20240518011205581.png)
 
-求解方程组，即可得出移动基站𝑁的位置坐标：![image-20240518011226178](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\image-20240518011226178.png)
+求解方程组，即可得出移动基站𝑁的位置坐标：![image-20240518011226178](Image\image-20240518011226178.png)
 
 ### [Python](https://github.com/555hhh555hhh/Bluetooth-AOA/blob/main/codes/Triangulation.py)实现
 
@@ -343,4 +339,3 @@ finally:
     ser2.close()
     print("串口已关闭")
 ```
-
