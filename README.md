@@ -1,5 +1,9 @@
 # ublox XPLR-AOA-2 explorer kits定位套件使用指南
 
+作者：汤竑敬
+
+联系方式：12011827@mail.sustech.edu.cn / 微信:13769875999
+
 资料附件：https://github.com/555hhh555hhh/Bluetooth-AOA
 
 产品官网：https://www.u-blox.com/en/product/xplr-aoa-2-kit
@@ -16,7 +20,7 @@
 
 2. 打开上位机s-center，选择串口号连接，检查波特率、奇偶校验、数据位、停止位等参数
 
-   ![image-20240517223735546](Image\image-20240517223735546.png)
+   <img src="Image\image-20240517223735546.png" alt="image-20240517223735546" style="zoom:80%;" />
 
    <img src="Image\image-20240517223213278.png" alt="image-20240517223213278" style="zoom:75%;" />
 
@@ -106,7 +110,7 @@
 >
 > 运行命令后请耐心等待至少1分钟，反正报错会自己停止，不要手动去终止。一般来说要等待一段时间后进度条才会开始变化。
 
-![image-20240518001715027](Image\image-20240518001715027.png)
+<img src="Image\image-20240518001715027.png" alt="image-20240518001715027" style="zoom:80%;" />
 
 5. 检查是否烧录成功
 
@@ -153,17 +157,17 @@
 
 使用Python进行数据读取，在设置串口时需要增加一些设置，特别是开启RTSCTS
 
-![image-20240518005605295](Image\image-20240518005605295.png)
+<img src="Image\image-20240518005605295.png" alt="image-20240518005605295" style="zoom:80%;" />
 
 在死循环中读取串口数据
 
-![image-20240518005655206](Image\image-20240518005655206.png)
+<img src="Image\image-20240518005655206.png" alt="image-20240518005655206" style="zoom:80%;" />
 
 ![image-20240518005740131](Image\image-20240518005740131.png)
 
 进行数据筛选，只保留两个角度的信息
 
-![image-20240518005831578](Image\image-20240518005831578.png)
+<img src="Image\image-20240518005831578.png" alt="image-20240518005831578" style="zoom:80%;" />
 
 ![image-20240518005857061](Image\image-20240518005857061.png)
 
@@ -339,3 +343,4 @@ finally:
     ser2.close()
     print("串口已关闭")
 ```
+
