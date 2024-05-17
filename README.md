@@ -1,9 +1,4 @@
 # ublox XPLR-AOA-2 explorer kits定位套件使用指南
-
-作者：汤竑敬
-
-联系方式：12011827@mail.sustech.edu.cn / 微信:13769875999
-
 资料附件：https://github.com/555hhh555hhh/Bluetooth-AOA
 
 产品官网：https://www.u-blox.com/en/product/xplr-aoa-2-kit
